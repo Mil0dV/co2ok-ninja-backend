@@ -78,8 +78,10 @@
 /*Stap 5 maak vars die in de rover link gaan*/
 	$Als = readarray($url);
 
-	// $hard_code = "http://rover.ebay.com/rover/1/" . $Als . "/1?ff3=4&pub=5575312620&toolid=10001&campid=5338219191&customid=chex&mpre=" . $encode;
+	$hard_code = "http://rover.ebay.com/rover/1/" . $Als . "/1?ff3=4&pub=5575312620&toolid=10001&campid=5338219191&customid=chex&mpre=" . $encode;
 
-	header('Location: http://rover.ebay.com/rover/1/' . $Als . '/1?ff3=4&pub=5575312620&toolid=10001&campid=5338219191&customid=chex&mpre=' . $encode);
+	// header('Location: http://rover.ebay.com/rover/1/' . $Als . '/1?ff3=4&pub=5575349754&toolid=10001&campid=5338219191&customid=chex&mpre=' . $encode);
 
+	// https://rover.ebay.com/rover/1/1346-53482-19255-0/1?ff3=4&toolid=11800&pub=5575349754&campid=5338219191&mpre=https%3A%2F%2Fwww.ebay.nl%2Fitm%2FSanDisk-SANSA-Clip-Sport-Plus-MP3-Player-BLUETOOTH-RADIO-FM-Water-resistant-16GB%2F332682659322%3Fhash%3Ditem4d756e85fa%3Ag%3AN8sAAOSw7m9bHn3S
+	echo $hard_code;
 ?>
