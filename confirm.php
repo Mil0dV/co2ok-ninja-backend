@@ -8,7 +8,7 @@
 
 	<?php
 
-		echo "<a href='redirect.php?url='" . urlencode($_GET['url']) . ">Klik hier</a>";
+		echo "<a href='redirect.php?url=" . urlencode($_GET['url']) . "'>Klik hier</a>";
 
 	?>
 
