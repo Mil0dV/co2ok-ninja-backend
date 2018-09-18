@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(false);
+
 /*Stap 1 url met GET in een var zetten.*/	
 	$url = $_GET['url'];
 
@@ -10,7 +12,7 @@
 		return $match[0];
 	}
 /*Stap 3 de .nl moet in de if om gecheck geworden*/
-	function readarray($url){
+	function readArray($url){
 
 		$tld = FindTLD($url);
 
@@ -72,16 +74,42 @@
 		}
 	}
 
+	function FindSiteName($url){
+		preg_match('|www.\K[^.]*|', $url, $match);
+		return $match[0];
+	}
+
+	function readArraySite(){
+
+		$Site = FindSiteName($url);
+
+		$readSite = array("jaarbeurs.nl" => "jaarbeurs.nl", "gearbest.com" => "gearbest.com");
+
+		switch ($Site) {
+			case 'jaarbeurs.nl':
+				$readSite['jaarbeurs.nl'];
+				return $readSite['jaarbeurs.nl'];
+				break;
+			case 'gearbest.com':
+				$readSite['gearbest.com'];
+				return $readSite['gearbest.com'];
+				break;
+
+			
+		}
+	}
+	
 /*Stap 4 urlencode de website waar je bij de website www.ebay.nl(bijvoorbeeld) naar https%3A%2F%2Fwww.ebay.nl%2F gaan*/
 	$encode = urlencode($url);
 
 /*Stap 5 maak vars die in de rover link gaan*/
 	$Als = readarray($url);
+	$test = FindSiteName($url);
 
-	$hard_code = "http://rover.ebay.com/rover/1/" . $Als . "/1?ff3=4&pub=5575312620&toolid=10001&campid=5338219191&customid=chex&mpre=" . $encode;
+	if ($test == 'ebay') {
+		header('Location: http://rover.ebay.com/rover/1/' . $Als . '/1?ff3=4&pub=5575349754&toolid=10001&campid=5338219191&customid=chex&mpre=' . $encode);	
+	} else{
+		header('Location: http://www.awin1.com/cread.php?awinmid=8315&awinaffid=283879&clickref=chex&p=' . $encode);
+	}
 
-	// header('Location: http://rover.ebay.com/rover/1/' . $Als . '/1?ff3=4&pub=5575349754&toolid=10001&campid=5338219191&customid=chex&mpre=' . $encode);
-
-	// https://rover.ebay.com/rover/1/1346-53482-19255-0/1?ff3=4&toolid=11800&pub=5575349754&campid=5338219191&mpre=https%3A%2F%2Fwww.ebay.nl%2Fitm%2FSanDisk-SANSA-Clip-Sport-Plus-MP3-Player-BLUETOOTH-RADIO-FM-Water-resistant-16GB%2F332682659322%3Fhash%3Ditem4d756e85fa%3Ag%3AN8sAAOSw7m9bHn3S
-	echo $hard_code;
 ?>
