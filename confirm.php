@@ -11,7 +11,28 @@
 	function readarray($url){
 		$tld = FindTLD($url);
 		$dotLang = array("at" => ".at", "com.au" => ".com.au", "be" => ".be", "ca" => ".ca", "ch" => ".ch", "de" => ".de", "es" => ".es", "fr" => ".fr", "ie" => ".ie", "it" => ".it", "nl" => ".nl", "co.uk" => ".co.uk", "com" => ".com");
-		switch ($tld) {
+
+		if(!empty($url))
+	{
+
+		if(in_array($tld, $dotLang))
+		{
+
+			return $tld;
+
+		}else{
+
+			echo 'bestaat niet';
+
+		}
+
+	}else{
+
+		echo 'empty url';
+
+	}
+
+		/*switch ($tld) {
 			case '.at':
 				$dotLang['at'];
 				return $dotLang['at'];
@@ -64,7 +85,7 @@
 				$dotLang['com'];
 				return $dotLang['com'];
 				break;
-		}
+		}*/
 	}
 
 	$lang = readarray($url);
@@ -75,7 +96,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 	<link rel="stylesheet" type="text/css" href="confirmm.css">
-</head>	
+</head>
 <body>
 
 	<div id="container">
