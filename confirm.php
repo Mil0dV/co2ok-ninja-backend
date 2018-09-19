@@ -32,60 +32,6 @@
 
 	}
 
-		/*switch ($tld) {
-			case '.at':
-				$dotLang['at'];
-				return $dotLang['at'];
-				break;
-			case '.com.au':
-				$dotLang['com.au'];
-				return $dotLang['com.au'];
-				break;
-			case '.be':
-				$dotLang['be'];
-				return $dotLang['be'];
-				break;
-			case '.ca':
-				$dotLang['ca'];
-				return $dotLang['ca'];
-				break;
-			case '.ch':
-				$dotLang['ch'];
-				return $dotLang['ch'];
-				break;
-			case '.de':
-				$dotLang['de'];
-				return $dotLang['de'];
-				break;
-			case '.es':
-				$dotLang['es'];
-				return $dotLang['es'];
-				break;
-			case '.fr':
-				$dotLang['fr'];
-				return $dotLang['fr'];
-				break;
-			case '.ie':
-				$dotLang['ie'];
-				return $dotLang['ie'];
-				break;
-			case '.it':
-				$dotLang['it'];
-				return $dotLang['it'];
-				break;
-			case '.nl':
-				$dotLang['nl'];
-				return $dotLang['nl'];
-				break;
-			case '.co.uk':
-				$dotLang['co.uk'];
-				return $dotLang['co.uk'];
-				break;
-			case '.com':
-				$dotLang['com'];
-				return $dotLang['com'];
-				break;
-		}*/
 	}
 
 	$lang = readarray($url);

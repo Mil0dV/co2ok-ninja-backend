@@ -25,60 +25,6 @@ error_reporting(false);
 
 		}
 
-		/*switch ($tld) {
-			case '.at':
-				$Land_code['at'];
-				return $Land_code['at'];
-				break;
-			case '.com.au':
-				$Land_code['com.au'];
-				return $Land_code['com.au'];
-				break;
-			case '.be':
-				$Land_code['be'];
-				return $Land_code['be'];
-				break;
-			case '.ca':
-				$Land_code['ca'];
-				return $Land_code['ca'];
-				break;
-			case '.ch':
-				$Land_code['ch'];
-				return $Land_code['ch'];
-				break;
-			case '.de':
-				$Land_code['de'];
-				return $Land_code['de'];
-				break;
-			case '.es':
-				$Land_code['es'];
-				return $Land_code['es'];
-				break;
-			case '.fr':
-				$Land_code['fr'];
-				return $Land_code['fr'];
-				break;
-			case '.ie':
-				$Land_code['ie'];
-				return $Land_code['ie'];
-				break;
-			case '.it':
-				$Land_code['it'];
-				return $Land_code['it'];
-				break;
-			case '.nl':
-				$Land_code['nl'];
-				return $Land_code['nl'];
-				break;
-			case '.co.uk':
-				$Land_code['co.uk'];
-				return $Land_code['co.uk'];
-				break;
-			case '.com':
-				$Land_code['com'];
-				return $Land_code['com'];
-				break;
-		}*/
 	}
 
 	function FindSiteName($url){
