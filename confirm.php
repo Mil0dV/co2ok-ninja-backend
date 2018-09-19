@@ -11,60 +11,27 @@
 	function readarray($url){
 		$tld = FindTLD($url);
 		$dotLang = array("at" => ".at", "com.au" => ".com.au", "be" => ".be", "ca" => ".ca", "ch" => ".ch", "de" => ".de", "es" => ".es", "fr" => ".fr", "ie" => ".ie", "it" => ".it", "nl" => ".nl", "co.uk" => ".co.uk", "com" => ".com");
-		switch ($tld) {
-			case '.at':
-				$dotLang['at'];
-				return $dotLang['at'];
-				break;
-			case '.com.au':
-				$dotLang['com.au'];
-				return $dotLang['com.au'];
-				break;
-			case '.be':
-				$dotLang['be'];
-				return $dotLang['be'];
-				break;
-			case '.ca':
-				$dotLang['ca'];
-				return $dotLang['ca'];
-				break;
-			case '.ch':
-				$dotLang['ch'];
-				return $dotLang['ch'];
-				break;
-			case '.de':
-				$dotLang['de'];
-				return $dotLang['de'];
-				break;
-			case '.es':
-				$dotLang['es'];
-				return $dotLang['es'];
-				break;
-			case '.fr':
-				$dotLang['fr'];
-				return $dotLang['fr'];
-				break;
-			case '.ie':
-				$dotLang['ie'];
-				return $dotLang['ie'];
-				break;
-			case '.it':
-				$dotLang['it'];
-				return $dotLang['it'];
-				break;
-			case '.nl':
-				$dotLang['nl'];
-				return $dotLang['nl'];
-				break;
-			case '.co.uk':
-				$dotLang['co.uk'];
-				return $dotLang['co.uk'];
-				break;
-			case '.com':
-				$dotLang['com'];
-				return $dotLang['com'];
-				break;
+
+		if(!empty($url))
+	{
+
+		if(in_array($tld, $dotLang))
+		{
+
+			return $tld;
+
+		}else{
+
+			echo 'bestaat niet';
+
 		}
+
+	}else{
+
+		echo 'empty url';
+
+	}
+
 	}
 
 	$lang = readarray($url);
@@ -75,7 +42,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 	<link rel="stylesheet" type="text/css" href="confirmm.css">
-</head>	
+</head>
 <body>
 
 	<div id="container">
