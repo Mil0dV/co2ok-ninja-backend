@@ -11,8 +11,7 @@
 	function readarray($url){
 		$tld = FindTLD($url);
 		$dotLang = array("at" => ".at", "com.au" => ".com.au", "be" => ".be", "ca" => ".ca", "ch" => ".ch", "de" => ".de", "es" => ".es", "fr" => ".fr", "ie" => ".ie", "it" => ".it", "nl" => ".nl", "co.uk" => ".co.uk", "com" => ".com");
-
-		if(!empty($url))
+	if(!empty($url))
 	{
 
 		if(in_array($tld, $dotLang))
@@ -31,7 +30,6 @@
 		echo 'empty url';
 
 	}
-
 	}
 
 	$lang = readarray($url);
@@ -42,7 +40,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 	<link rel="stylesheet" type="text/css" href="confirmm.css">
-</head>
+</head>	
 <body>
 
 	<div id="container">
@@ -57,11 +55,11 @@
 	</p>
 	<p>
 		<?php
-			echo "<a href='" . $_GET['url'] . "' class='btn btn-light md1' style='padding: 20px; witdh: 1%;'>Ga terug zonder partner code</a>";
+			echo "<a href='" . $_GET['url'] . "' class='btn btn-light md1' style='padding: 20px; witdh: 1%;'>I don't want to use co2ok</a>";
 		?>
 	</p>
 	<p id="link">
-		Wil je meer weten kom dan <a href="http://www.co2ok.eco/">hier</a>
+		Do you want to know more about the climate <a href="http://www.co2ok.eco/">click here</a>
 	</p>
 	</div>
 </body>
