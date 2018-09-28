@@ -1,5 +1,5 @@
 <?php
-	
+	error_reporting(false);
 	$url = $_GET['url'];
 
 	function FindTLD($url){
@@ -81,21 +81,18 @@
 
 		$Site = FindSiteName($url);
 
-		switch ($Site) {
-			case 'ebay':
-				header('Location: http://rover.ebay.com/rover/1/' . $Als . '/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=' . $encode);
-				break;
-			case 'jaarbeurs': 
-			case 'gearbest':
-				header('Location: http://www.awin1.com/cread.php?awinmid=8315&awinaffid=283879&clickref=chex&p=' . $encode);
-				break;
-			case '101shavers':
-				header('Location: http://www.anrdoezrs.net/links/8106588/type/dlg/sid/chex/' . $encode);
-				break;
-			case '0cm':
-				header('Location:https://t.cfjump.com/50770/t/48059?Url='. $encode . '&UniqueId=chex');
-				break;			
+		$awin = array("jaarbeurs", "gearbest");
+		$anrdoezrs = array("101shavers");
+		$tcfjump = array("0cm");
+
+		if (in_array($Site, $awin)) {
+			header('Location: http://www.awin1.com/cread.php?awinmid=8315&awinaffid=283879&clickref=chex&p=' . $encode);
+		} elseif (in_array($Site, $anrdoezrs)) {
+			header('Location: http://www.anrdoezrs.net/links/8106588/type/dlg/sid/chex/' . $encode);
+		} elseif (in_array($Site, $tcfjump)) {
+			header('Location:https://t.cfjump.com/50770/t/48059?Url='. $encode . '&UniqueId=chex');
+		} else{
+			header('Location: http://rover.ebay.com/rover/1/' . $Als . '/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=' . $encode);
 		}
-	}
 
 ?>
