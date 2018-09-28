@@ -94,5 +94,5 @@
 		} else{
 			header('Location: http://rover.ebay.com/rover/1/' . $Als . '/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=' . $encode);
 		}
-
+	}
 ?>
