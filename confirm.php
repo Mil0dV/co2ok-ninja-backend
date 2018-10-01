@@ -49,7 +49,7 @@
 	<p id="text">You are about to go to: <?php echo $url;?>. It means that if you go there by clicking the green button below and buy something - co2ok.eco will receive a small portion of what you've spent (the price stays the same for you), which we will donate to one of the organizations we support</p>
 	<p>
 		<?php
-			echo "<a href='redirect.php?url=" . urlencode($_GET['url']) . "' class='btn btn-success md' style='padding: 20px; witdh: 1%;'>I understand and happy to help. Take me back to ebay";
+			echo "<a href='redirect.php?url=" . $_GET['url'] . "' class='btn btn-success md' style='padding: 20px; witdh: 1%;'>I understand and happy to help. Take me back to ebay";
 			echo $lang . "!</a>";
 		?>
 	</p>
