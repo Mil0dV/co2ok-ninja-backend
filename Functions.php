@@ -98,101 +98,53 @@
 		$DaisyCon = array("lacasita", "voetbaldirect");
 
 		if (in_array($Site, $awin)) {
-			// header('Location: http://www.awin1.com/cread.php?awinmid=8315&awinaffid=283879&clickref=chex&p=' . $encode);
-				$awin1 = 'http://www.awin1.com/cread.php?awinmid=' . FindAwinMid($url) . '&awinaffid=283879&clickref=chex&p=' . $encode;
-				echo $awin1;
+			header('Location: http://www.awin1.com/cread.php?awinmid=8315&awinaffid=283879&clickref=chex&p=' . $encode);
 		}elseif (in_array($Site, $anrdoezrs)) {
-			// header('Location: http://www.anrdoezrs.net/links/8106588/type/dlg/sid/chex/' . $encode);
-			$Eanrdoezrs = 'http://www.anrdoezrs.net/links/8106588/type/dlg/sid/chex/' . $encode;
-			echo $Eanrdoezrs;
+			header('Location: http://www.anrdoezrs.net/links/8106588/type/dlg/sid/chex/' . $encode);
 		} elseif (in_array($Site, $tcfjump)) {
-			// header('Location:https://t.cfjump.com/50770/t/48059?Url='. $encode . '&UniqueId=chex');
-			$Etcfjump = 'https://t.cfjump.com/50770/t/48059?Url='. $encode . '&UniqueId=chex';
-			echo $Etcfjump;
+			header('Location:https://t.cfjump.com/50770/t/48059?Url='. $encode . '&UniqueId=chex');
 		} elseif (in_array($Site, $booking)) {
-			// header('Location:http://booking.com?aid=1308879&label=chex');
-			$Book = 'http://booking.com?aid=1308879&label=chex';
-			echo $Book;
+			header('Location:http://booking.com?aid=1308879&label=chex');
 		}elseif (in_array($Site, $tc_tt)) {
-			// header('Location:http://tc.tradetracker.net/?c=1118&m=12&a=282840&r=chex&u='. $encode .);
-			$tctt = 'http://tc.tradetracker.net/?c=1118&m=12&a=282840&r=chex&u=' . $encode;
-			echo $tctt;
+			header('Location:http://tc.tradetracker.net/?c=1118&m=12&a=282840&r=chex&u='. $encode .);
 		}elseif (in_array($Site, $a1)) {
-			// header('Location:http://www.a1travel.com/chadwell/?tt=8953_12_282840_chex&r='. $encode);
-			$a1t = 'http://www.a1travel.com/chadwell/?tt=8953_12_282840_chex&r=' . $encode;
-			echo $a1t;
+			header('Location:http://www.a1travel.com/chadwell/?tt=8953_12_282840_chex&r='. $encode);
 		}elseif (in_array($Site, $Al)) {
-			// header('Location:http://www.aluminiumwarehouse.co.uk/tin/?tt=9296_12_282840_chex&r='. $encode);
-			$Aluminium = 'http://www.aluminiumwarehouse.co.uk/tin/?tt=9296_12_282840_chex&r=' . $encode;
-			echo $Aluminium;
+			header('Location:http://www.aluminiumwarehouse.co.uk/tin/?tt=9296_12_282840_chex&r='. $encode);
 		}elseif (in_array($Site, $Arena)) {
-			// header('Location:http://www.arenascollection.com/design/?tt=1673_12_282840_chex&r='. $encode);
-			$AC = 'http://www.arenascollection.com/design/?tt=1673_12_282840_chex&r=' . $encode;
-			echo $AC;
+			header('Location:http://www.arenascollection.com/design/?tt=1673_12_282840_chex&r='. $encode);
 		}elseif (in_array($Site, $BangGoods)) {
-			// header('Location:http://www.banggood.com/bang/?tt=16943_12_282840_chex&r='. $encode);
-			$BG = 'http://www.banggood.com/bang/?tt=16943_12_282840_chex&r=' . $encode;
-			echo $BG;
+			header('Location:http://www.banggood.com/bang/?tt=16943_12_282840_chex&r='. $encode);
 		}elseif (in_array($Site, $Basic)) {
-			// header('Location:http://www.basic-travel.com/travel/?tt=2200_12_282840_chex&r='. $encode);
-			$BT = 'http://www.basic-travel.com/travel/?tt=2200_12_282840_chex&r=' . $encode;
-			echo $BT;
+			header('Location:http://www.basic-travel.com/travel/?tt=2200_12_282840_chex&r='. $encode);
 		}elseif (in_array($Site, $BirdFOOT)) {
-			// header('Location:http://www.birdfood.co.uk/tt/?tt=6544_12_282840_chex&r='. $encode);
-			$BF = 'http://www.birdfood.co.uk/tt/?tt=6544_12_282840_chex&r=' . $encode;
-			echo $BF;
+			header('Location:http://www.birdfood.co.uk/tt/?tt=6544_12_282840_chex&r='. $encode);
 		}elseif (in_array($Site, $biv)) {
 			// header('Location:http://www.bivolino.com/custom/index.aspx?tt=12298_12_282840_chex&r='. $encode);
-			$BI = 'http://www.bivolino.com/custom/index.aspx?tt=12298_12_282840_chex&r=' . $encode;
-			echo $BI;
 		}elseif (in_array($Site, $Blind)) {
-			// header('Location:http://www.blindsdirectonline.co.uk/blinds/?tt=24293_12_282840_chex&r='. $encode);
-			$Blinds = 'http://www.blindsdirectonline.co.uk/blinds/?tt=24293_12_282840_chex&r=' . $encode;
-			echo $Blinds;
+			header('Location:http://www.blindsdirectonline.co.uk/blinds/?tt=24293_12_282840_chex&r='. $encode);
 		}elseif (in_array($Site, $Buy)) {
-			// header('Location:http://www.buyincoins.com/shopping/?tt=25773_12_282840_chex&r='. $encode);
-			$BC = 'http://www.buyincoins.com/shopping/?tt=25773_12_282840_chex&r=' . $encode;
-			echo $BC;
+			header('Location:http://www.buyincoins.com/shopping/?tt=25773_12_282840_chex&r='. $encode);
 		}elseif (in_array($Site, $Camping)) {
-			// header('Location:http://www.campingselection.com/uk/Partners/TradeTracker/?tt=8294_12_282840_chex&r='. $encode);
-			$Camp = 'http://www.campingselection.com/uk/Partners/TradeTracker/?tt=8294_12_282840_chex&r=' . $encode;
-			echo $Camp;
+			header('Location:http://www.campingselection.com/uk/Partners/TradeTracker/?tt=8294_12_282840_chex&r='. $encode);
 		}elseif (in_array($Site, $ClickBaid)) {
-			// header('Location:https://click.linksynergy.com/deeplink?id=XK9XruzkyUo&u1=chex&mid=35490&murl='. $encode);
-			$clik = 'https://click.linksynergy.com/deeplink?id=XK9XruzkyUo&u1=chex&mid=35490&murl=' . $encode;
-			echo $clik;
+			header('Location:https://click.linksynergy.com/deeplink?id=XK9XruzkyUo&u1=chex&mid=35490&murl='. $encode);
 		}elseif (in_array($Site, $Colway)) {
-			// header('Location:https://colwayinternational.online/beauty/?tt=26078_12_282840_chex&r='. $encode);
-			$Col = 'https://colwayinternational.online/beauty/?tt=26078_12_282840_chex&r=' . $encode;
-			echo $Col;
+			header('Location:https://colwayinternational.online/beauty/?tt=26078_12_282840_chex&r='. $encode);
 		}elseif (in_array($Site, $A4)) {
-			// header('Location:https://www.a4labels.com/labels/?tt=25370_12_282840_chex&r='. $encode);
-			$A4tje = 'https://www.a4labels.com/labels/?tt=25370_12_282840_chex&r=' . $encode;
-			echo $A4tje;
+			header('Location:https://www.a4labels.com/labels/?tt=25370_12_282840_chex&r='. $encode);
 		}elseif (in_array($Site, $CT)) {
-			// header('Location:https://www.chicretreats.com/hotels/?tt=25704_12_282840_chex&r='. $encode);
-			$Chick = 'https://www.chicretreats.com/hotels/?tt=25704_12_282840_chex&r=' . $encode;
-			echo $Chick;
+			header('Location:https://www.chicretreats.com/hotels/?tt=25704_12_282840_chex&r='. $encode);
 		}elseif(in_array($Site, $bol)) {
 			header('Location:https://partner.bol.com/click/click?p=2&t=url&s=51851&f=TXL&url=' . $encode);
-			// $boll = 'https://partner.bol.com/click/click?p=2&t=url&s=51851&f=TXL&url=' . $encode;
-			// echo '<a href="' . $boll . '">Test Bitch</a>';
 		}elseif(in_array($Site, $Cool)) {
-			// header('Location:https://partner.bol.com/click/click?p=2&t=url&s=51851&f=TXL&url=' . $encode);
-			$CB = 'https://prf.hn/click/camref:1101l3r4E/destination:' . $encode;
-			echo '<a href="' . $CB . '">Test Bitch</a>';
+			header('Location:https://partner.bol.com/click/click?p=2&t=url&s=51851&f=TXL&url=' . $encode);
 		}elseif(in_array($Site, $DX)) {
 			header('Location:' . $url . '?TC=USD&&Utm_rid=78139600&Utm_source=affiliate');
-			// $xD = $url . '?TC=USD&&Utm_rid=78139600&Utm_source=affiliate';
-			// echo '<a href="' . $xD . '">Test Bitch</a>';
 		}elseif (in_array($Site, $DaisyCon)) {
-			// header('Location:https://ds1.nl/c/?si=203&li=11675&wi=303581&ws=&dl=' . $encode);
-			$ds1 = 'https://ds1.nl/c/?si=' . FindDaisySi($url)[0] . '&li=' . FindDaisySi($url)[1] . '&wi=303581&ws=&dl=' . $encode;
-			echo $ds1;
+			header('Location:https://ds1.nl/c/?si=203&li=11675&wi=303581&ws=&dl=' . $encode);
 		}else{
-			// header('Location: http://rover.ebay.com/rover/1/' . $Als . '/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=' . $encode);
-			$ebay = 'http://rover.ebay.com/rover/1/' . $Als . '/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=' . $encode;
-			echo $ebay;
+			header('Location: http://rover.ebay.com/rover/1/' . $Als . '/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=' . $encode);
 		}
 	}
 ?>
