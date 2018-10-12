@@ -120,7 +120,7 @@
 		}elseif (in_array($Site, $BirdFOOT)) {
 			header('Location:http://www.birdfood.co.uk/tt/?tt=6544_12_282840_chex&r='. $encode);
 		}elseif (in_array($Site, $biv)) {
-			// header('Location:http://www.bivolino.com/custom/index.aspx?tt=12298_12_282840_chex&r='. $encode);
+			header('Location:http://www.bivolino.com/custom/index.aspx?tt=12298_12_282840_chex&r='. $encode);
 		}elseif (in_array($Site, $Blind)) {
 			header('Location:http://www.blindsdirectonline.co.uk/blinds/?tt=24293_12_282840_chex&r='. $encode);
 		}elseif (in_array($Site, $Buy)) {
