@@ -106,7 +106,7 @@
 		} elseif (in_array($Site, $booking)) {
 			header('Location:http://booking.com?aid=1308879&label=chex');
 		}elseif (in_array($Site, $tc_tt)) {
-			header('Location:http://tc.tradetracker.net/?c=1118&m=12&a=282840&r=chex&u='. $encode .);
+			header('Location:http://tc.tradetracker.net/?c=1118&m=12&a=282840&r=chex&u='. $encode);
 		}elseif (in_array($Site, $a1)) {
 			header('Location:http://www.a1travel.com/chadwell/?tt=8953_12_282840_chex&r='. $encode);
 		}elseif (in_array($Site, $Al)) {
