@@ -104,7 +104,7 @@
 		} elseif (in_array($Site, $tcfjump)) {
 			header('Location:https://t.cfjump.com/50770/t/48059?Url='. $encode . '&UniqueId=chex');
 		} elseif (in_array($Site, $booking)) {
-			header('Location:http://booking.com?aid=1308879&label=chex');
+			header('Location:http://booking.com?aid=1627502&label=chex');
 		}elseif (in_array($Site, $tc_tt)) {
 			header('Location:http://tc.tradetracker.net/?c=1118&m=12&a=282840&r=chex&u='. $encode);
 		}elseif (in_array($Site, $a1)) {
