@@ -66,6 +66,11 @@
 		return $match[0];
 	}
 
+	function FindURI($url){
+		preg_match('^[^/]*/[^/]*/[^/]*/(.*)$', $url, $match);
+		return $match[0];
+	}
+
 	function FindAwinMid($url){
 		$FAM = FindURLplusTLD($url);
 
@@ -82,6 +87,7 @@
 
 	function readArraySite($url){
 		$encode = urlencode($url);
+		$uri_encode = urlencode(FindURI($url));
 
 		$Als = readarray($url);
 
@@ -138,11 +144,11 @@
 		}elseif(in_array($Site, $bol)) {
 			header('Location:https://partner.bol.com/click/click?p=2&t=url&s=51851&f=TXL&url=' . $encode);
 		}elseif(in_array($Site, $Cool)) {
-			header('Location:https://partner.bol.com/click/click?p=2&t=url&s=51851&f=TXL&url=' . $encode);
+			header('Location:https://prf.hn/click/camref:1011l3qZq/destination:' . $encode);
 		}elseif(in_array($Site, $DX)) {
 			header('Location:' . $url . '?TC=USD&&Utm_rid=78139600&Utm_source=affiliate');
 		}elseif (in_array($Site, $DaisyCon)) {
-			header('Location:https://ds1.nl/c/?si=' . FindDaisySi($url)[0] . '&li=' . FindDaisySi($url)[1] . '&wi=303581&ws=&dl=' . $encode);
+			header('Location:https://ds1.nl/c/?si=' . FindDaisySi($url)[0] . '&li=' . FindDaisySi($url)[1] . '&wi=303581&ws=&dl=' . $uri_encode);
 		}else{
 			header('Location: http://rover.ebay.com/rover/1/' . $Als . '/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=' . $encode);
 		}
