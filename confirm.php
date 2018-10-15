@@ -45,7 +45,7 @@
 
 	<div id="container">
 	<img src="banner3.1_co2ok_def8.mobiel.svg">
-	<h2 id="title">Start raising money for climate neutral shopping</h2>
+	<h2 id="title">Shop climate neutral by compensating CO₂ emissions for the production of your online purchases</h2>
 	<p id="text">You are about to go to: <?php echo $url;?>. It means that if you go there by clicking the green button below and buy something - co2ok.eco will receive a small portion of what you've spent (the price stays the same for you), which we will donate to one of the organizations we support</p>
 	<p>
 		<?php
