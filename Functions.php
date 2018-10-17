@@ -154,7 +154,7 @@
 		}elseif(in_array($Site, $DX)) {
 			header('Location:' . $url . '?TC=USD&&Utm_rid=78139600&Utm_source=affiliate');
 		}elseif (in_array($Site, $DaisyCon)) {
-			header('Location:https://' . FindDaisySi($url)[0] . '/c/?si=' . FindDaisySi($url)[1] . '&li=' . FindDaisySi($url)[2] . '&wi=303581&ws=&dl=' . $encode);
+			header('Location:https://' . FindDaisySi($url)[0] . '/c/?si=' . FindDaisySi($url)[1] . '&li=' . FindDaisySi($url)[2] . '&wi=303581&ws=&dl=' . $uri_encode);
 		}else{
 			header('Location: http://rover.ebay.com/rover/1/' . $Als . '/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=' . $encode);
 		}
