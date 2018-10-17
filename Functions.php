@@ -92,10 +92,12 @@
 	function readArraySite($url){
 		$encode = urlencode($url);
 		$uri_encode = urlencode(FindURI($url));
-
+ 
 		$Als = readarray($url);
 
 		$Site = FindSiteName($url);
+
+		$Site2 = FindURLplusTLD($url);
 
 		global $FindDaisy;
 
@@ -109,14 +111,14 @@
 		$TradeTracker = array("tradetracker");
 
 		if (in_array($Site, $awin)) {
-			header('Location: http://www.awin1.com/cread.php?awinmid=8315&awinaffid=283879&clickref=chex&p=' . $encode);
+			return 'http://www.awin1.com/cread.php?awinmid=' . FindAwinMid($url) . '&awinaffid=283879&clickref=chex&p=' . $encode;
 		}elseif (in_array($Site, $anrdoezrs)) {
-			header('Location: http://www.anrdoezrs.net/links/8106588/type/dlg/sid/chex/' . $encode);
+			return 'http://www.anrdoezrs.net/links/8106588/type/dlg/sid/chex/' . $encode;
 		} elseif (in_array($Site, $tcfjump)) {
-			header('Location:https://t.cfjump.com/50770/t/48059?Url='. $encode . '&UniqueId=chex');
+			return 'https://t.cfjump.com/50770/t/48059?Url='. $encode . '&UniqueId=chex';
 		} elseif (in_array($Site, $booking)) {
-			header('Location:http://booking.com?aid=1308879&label=chex');
-		// }elseif (in_array($Site, $tc_tt)) {
+			return 'http://booking.com?aid=1308879&label=chex';
+		}//elseif (in_array($Site, $tc_tt)) {
 		// 	header('Location:http://tc.tradetracker.net/?c=1118&m=12&a=282840&r=chex&u='. $encode);
 		// }elseif (in_array($Site, $a1)) {
 		// 	header('Location:http://www.a1travel.com/chadwell/?tt=8953_12_282840_chex&r='. $encode);
@@ -148,15 +150,15 @@
 		// 	header('Location:https://www.chicretreats.com/hotels/?tt=25704_12_282840_chex&r='. $encode);
 		// }
 		 elseif(in_array($Site, $bol)) {
-			header('Location:https://partner.bol.com/click/click?p=2&t=url&s=51851&f=TXL&url=' . $encode);
+			return 'https://partner.bol.com/click/click?p=2&t=url&s=51851&f=TXL&url=' . $encode;
 		}elseif(in_array($Site, $Cool)) {
-			header('Location:https://prf.hn/click/camref:1011l3qZq/destination:' . $encode);
+			return 'https://prf.hn/click/camref:1011l3qZq/destination:' . $encode;
 		}elseif(in_array($Site, $DX)) {
-			header('Location:' . $url . '?TC=USD&&Utm_rid=78139600&Utm_source=affiliate');
+			return $url . '?TC=USD&&Utm_rid=78139600&Utm_source=affiliate';
 		}elseif (isset($FindDaisy[$Site2])) {
-			header('Location:https://' . FindDaisySi($url)[0] . '/c/?si=' . FindDaisySi($url)[1] . '&li=' . FindDaisySi($url)[2] . '&wi=303581&ws=&dl=' . $uri_encode);
-		}else{
-			header('Location: http://rover.ebay.com/rover/1/' . $Als . '/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=' . $encode);
-		}
+			return 'https://' . FindDaisySi($url)[0] . '/c/?si=' . FindDaisySi($url)[1] . '&li=' . FindDaisySi($url)[2] . '&wi=303581&ws=&dl=' . $uri_encode;
+		}//else{
+		// 	return ' http://rover.ebay.com/rover/1/' . $Als . '/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=' . $encode;
+		// }
 	}
 ?>

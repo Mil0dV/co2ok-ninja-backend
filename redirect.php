@@ -2,6 +2,6 @@
 
 	include 'Functions.php';
 
-	readArraySite($url);
+	header('location:' . readArraySite($url));
 
 ?>
