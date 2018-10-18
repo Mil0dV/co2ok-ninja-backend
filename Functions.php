@@ -118,6 +118,7 @@
 		} elseif (in_array($Site, $tcfjump)) {
 			return 'https://t.cfjump.com/50770/t/48059?Url='. $encode . '&UniqueId=chex';
 		} elseif (in_array($Site, $booking)) {
+<<<<<<< HEAD
 			return 'http://booking.com?aid=1308879&label=chex';
 		}elseif (in_array($Site, $tc_tt)) {
 			header('Location:http://tc.tradetracker.net/?c=1118&m=12&a=282840&r=chex&u='. $encode);
@@ -150,6 +151,41 @@
 		}elseif (in_array($Site, $CT)) {
 			header('Location:https://www.chicretreats.com/hotels/?tt=25704_12_282840_chex&r='. $encode);
 		}elseif(in_array($Site, $bol)) {
+=======
+			return 'http://booking.com?aid=1627502&label=chex';
+		}//elseif (in_array($Site, $tc_tt)) {
+		// 	header('Location:http://tc.tradetracker.net/?c=1118&m=12&a=282840&r=chex&u='. $encode);
+		// }elseif (in_array($Site, $a1)) {
+		// 	header('Location:http://www.a1travel.com/chadwell/?tt=8953_12_282840_chex&r='. $encode);
+		// }elseif (in_array($Site, $Al)) {
+		// 	header('Location:http://www.aluminiumwarehouse.co.uk/tin/?tt=9296_12_282840_chex&r='. $encode);
+		// }elseif (in_array($Site, $Arena)) {
+		// 	header('Location:http://www.arenascollection.com/design/?tt=1673_12_282840_chex&r='. $encode);
+		// }elseif (in_array($Site, $BangGoods)) {
+		// 	header('Location:http://www.banggood.com/bang/?tt=16943_12_282840_chex&r='. $encode);
+		// }elseif (in_array($Site, $Basic)) {
+		// 	header('Location:http://www.basic-travel.com/travel/?tt=2200_12_282840_chex&r='. $encode);
+		// }elseif (in_array($Site, $BirdFOOT)) {
+		// 	header('Location:http://www.birdfood.co.uk/tt/?tt=6544_12_282840_chex&r='. $encode);
+		// }elseif (in_array($Site, $biv)) {
+		// 	header('Location:http://www.bivolino.com/custom/index.aspx?tt=12298_12_282840_chex&r='. $encode);
+		// }elseif (in_array($Site, $Blind)) {
+		// 	header('Location:http://www.blindsdirectonline.co.uk/blinds/?tt=24293_12_282840_chex&r='. $encode);
+		// }elseif (in_array($Site, $Buy)) {
+		// 	header('Location:http://www.buyincoins.com/shopping/?tt=25773_12_282840_chex&r='. $encode);
+		// }elseif (in_array($Site, $Camping)) {
+		// 	header('Location:http://www.campingselection.com/uk/Partners/TradeTracker/?tt=8294_12_282840_chex&r='. $encode);
+		// }elseif (in_array($Site, $ClickBaid)) {
+		// 	header('Location:https://click.linksynergy.com/deeplink?id=XK9XruzkyUo&u1=chex&mid=35490&murl='. $encode);
+		// }elseif (in_array($Site, $Colway)) {
+		// 	header('Location:https://colwayinternational.online/beauty/?tt=26078_12_282840_chex&r='. $encode);
+		// }elseif (in_array($Site, $A4)) {
+		// 	header('Location:https://www.a4labels.com/labels/?tt=25370_12_282840_chex&r='. $encode);
+		// }elseif (in_array($Site, $CT)) {
+		// 	header('Location:https://www.chicretreats.com/hotels/?tt=25704_12_282840_chex&r='. $encode);
+		// }
+		 elseif(in_array($Site, $bol)) {
+>>>>>>> 869b6c572ef87d161dd5c35f93dd77c5a921aa2d
 			return 'https://partner.bol.com/click/click?p=2&t=url&s=51851&f=TXL&url=' . $encode;
 		}elseif(in_array($Site, $Cool)) {
 			return 'https://prf.hn/click/camref:1011l3qZq/destination:' . $encode;
