@@ -2,6 +2,6 @@
 
 	include 'Functions.php';
 
-	header('location:' . readArraySite($url));
+	header('location:' . SubDomein($url));
 
 ?>
