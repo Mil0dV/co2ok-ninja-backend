@@ -147,7 +147,7 @@
 		}elseif(in_array($Site, $bol)) {
 			return 'https://partner.bol.com/click/click?p=2&t=url&s=51851&f=TXL&url=' . $encode;
 		}elseif(in_array($Site, $Cool)) {
-			return 'https://prf.hn/click/camref:1011l3qZq/destination:' . $encode;
+			return 'https://prf.hn/click/camref:1101l3r4E/destination:' . $encode;
 		}elseif(in_array($Site, $DX)) {
 			return $url . '?TC=USD&&Utm_rid=78139600&Utm_source=affiliate';
 		}elseif (isset($FindDaisy[$Site])) {
