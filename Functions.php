@@ -69,7 +69,7 @@
 
 	function FindURI($url){
 		preg_match('|^[^/]*/[^/]*/[^/]*/(.*)$|', $url, $match);
-		return $match[0];
+		return $match[1];
 	}
 
 	function FindAwinMid($url){
