@@ -1,7 +1,7 @@
 <?php
 	include 'arrays.php';
 	include 'FunctionsFind.php';
-	// error_reporting(false);
+	error_reporting(false);
 	$url = $_GET['url'];
 
 	function FindTLD($url){
