@@ -12,4 +12,6 @@ $FindDaisy = array("drogisterij.net" => array("ds1.nl", "35", "11507"),"happyhom
 
 
 	$AwinMid = array("lesara.se" => "10006", "jaarbeurs.nl" => "8315", "gearbest.com" => "6607", "tiqets.com" => "8111", "campusshop.nl" => "13535", "jysk.nl" => "9776", "made.com" => "8153", "norrod.nl" => "13536", "sissy-boy.com" => "123459", "allekabels.nl" => "9213", "webwinkel.anwb.nl" => "12984", "avantisport.nl" => "8473", "bajabikes.eu" => "12892", "beterbed.nl" => "8205", "fine2sleep.nl" => "8457", "kaartenhuis.nl" => "9009", "nl.myprotein.com" => "8662", "riverisland.nl" => "8223", "sarenza.nl" => "8402", "shuurman-schoenen.nl" => "8472", "terstal.nl" => "10912", "treatwell.nl" => "8590");
+
+	$Coolblue = array("coolblue.nl" => "1101l3r4E", "coolblue.be" => "1011l3qZq");
 ?>

@@ -1,7 +1,7 @@
 <?php
 	include 'arrays.php';
 	include 'FunctionsFind.php';
-	error_reporting(false);
+	// error_reporting(false);
 	$url = $_GET['url'];
 
 	function FindTLD($url){
@@ -85,12 +85,12 @@
 		global $AwinMid;
 		global $TradeTracker;
 		global $FindDaisy;
+		global $Coolblue;
 
 		$anrdoezrs = array("101shavers");
 		$tcfjump = array("0cm.com");
 		$booking = array("booking.com");
 		$bol = array("bol.com");
-		$Cool = array("coolblue.nl", "coolblue.be");
 		$DX = array("dx.com");
 		$ebay = array("ebay.at","ebay.be","ebay.ca","ebay.ch","ebay.co.uk","ebay.com","ebay.com.au","ebay.de","ebay.es","ebay.fr","ebay.ie","ebay.it","ebay.nl");
 
@@ -136,8 +136,8 @@
 		// }
 		elseif(in_array($Site, $bol)) {
 			return 'https://partner.bol.com/click/click?p=2&t=url&s=51851&f=TXL&url=' . $encode;
-		}elseif(in_array($Site, $Cool)) {
-			return 'https://prf.hn/click/camref:1011l3qZq/destination:' . $encode;
+		}elseif(isset($Coolblue[$Site])) {
+			return 'https://prf.hn/click/camref:' . FindCoolblue($url) . '/destination:' . $encode;
 		}elseif(in_array($Site, $DX)) {
 			return $url . '?TC=USD&&Utm_rid=78139600&Utm_source=affiliate';
 		}elseif (isset($FindDaisy[$Site])) {

@@ -28,4 +28,11 @@
 		return $TradeTracker[$TradeTracks];
 	}
 
+	function FindCoolblue($url){
+		$Cool = FindURLplusTLD($url);
+
+		global $Coolblue;
+		return $Coolblue[$Cool];
+	}
+
 ?>
