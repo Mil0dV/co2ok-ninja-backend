@@ -70,7 +70,7 @@
 
 	function FindURI($url){
 		preg_match('|^[^/]*/[^/]*/[^/]*/(.*)$|', $url, $match);
-		return $match[0];
+		return $match[1];
 	}
 
 	function readArraySite($url, $strip_url){
@@ -103,7 +103,7 @@
 		} elseif (in_array($Site, $booking)) {
 			return 'http://booking.com?aid=1627502&label=chex';
 		}elseif (isset($TradeTracker[$Site])){
-			return 'http://tc.tradetracker.net/?c=' . FindTradeTrackers($url) . '&m=0&a=315369';
+			return 'http://tc.tradetracker.net/?c=' . FindTradeTrackers($url) . '&m=12&a=315369&u=' . $uri_encode;
 		}
 		// elseif (in_array($Site, $a1)) {
 		// 	return 'http://www.a1travel.com/chadwell/?tt=8953_12_282840_chex&r='. $encode;
