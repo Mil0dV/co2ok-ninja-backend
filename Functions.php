@@ -1,7 +1,7 @@
 <?php
 	include 'arrays.php';
 	include 'FunctionsFind.php';
-	// error_reporting(false);
+	error_reporting(false);
 	$url = $_GET['url'];
 
 	function FindTLD($url){
@@ -86,6 +86,7 @@
 		global $TradeTracker;
 		global $FindDaisy;
 		global $Coolblue;
+		global $YieldKit;
 
 		$anrdoezrs = array("101shavers");
 		$tcfjump = array("0cm.com");
@@ -146,6 +147,8 @@
 			return ' http://rover.ebay.com/rover/1/' . $Als . '/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=' . $encode;
 		}elseif(isset($TradeTrackersThingsElse[$Site])){
 			return $url . FindTradeTracker($url)[0] . '/?tt=' . FindTradeTracker($url)[1] . '_0_315369_';
+		}elseif (in_array($Site, $YieldKit)) {
+			return 'http://r.srvtrck.com/v1/redirect?url=' . $encode . '&api_key=6192753faa5975d8d9450690274e77dd&site_id=249c53bccf944c4c8f010cf6c914f30c&type=url&source=https%3A%2F%2Fco2ok.ninja';
 		}
 	}
 	function SubDomein($url){
