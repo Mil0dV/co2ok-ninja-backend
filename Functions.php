@@ -103,8 +103,6 @@
 			return 'https://t.cfjump.com/50770/t/48059?Url='. $encode . '&UniqueId=chex';
 		} elseif (in_array($Site, $booking)) {
 			return 'http://booking.com?aid=1627502&label=chex';
-		}elseif (in_array($Site, $YieldKit)) {
-			return 'http://r.srvtrck.com/v1/redirect?url=' . $encode . '&api_key=6192753faa5975d8d9450690274e77dd&site_id=249c53bccf944c4c8f010cf6c914f30c&type=url&source=https%3A%2F%2Fco2ok.ninja';
 		}elseif (isset($TradeTracker[$Site])){
 			return 'http://tc.tradetracker.net/?c=' . FindTradeTrackers($url) . '&m=12&a=315369&u=' . $uri_encode;
 		}
@@ -139,6 +137,8 @@
 		// }
 		elseif(in_array($Site, $bol)) {
 			return 'https://partner.bol.com/click/click?p=2&t=url&s=51851&f=TXL&url=' . $encode;
+		}elseif (in_array($Site, $YieldKit)) {
+			return 'http://r.srvtrck.com/v1/redirect?url=' . $encode . '&api_key=6192753faa5975d8d9450690274e77dd&site_id=249c53bccf944c4c8f010cf6c914f30c&type=url&source=https%3A%2F%2Fco2ok.ninja';
 		}elseif(isset($Coolblue[$Site])) {
 			return 'https://prf.hn/click/camref:' . FindCoolblue($url) . '/destination:' . $encode;
 		}elseif(in_array($Site, $DX)) {
