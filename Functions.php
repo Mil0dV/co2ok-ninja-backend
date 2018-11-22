@@ -96,7 +96,7 @@
 		$ebay = array("ebay.at","ebay.be","ebay.ca","ebay.ch","ebay.co.uk","ebay.com","ebay.com.au","ebay.de","ebay.es","ebay.fr","ebay.ie","ebay.it","ebay.nl");
 
 		if (isset($AwinMid[$Site])) {
-			return 'http://www.awin1.com/cread.php?awinmid=' . FindAwinMid($url) . '&awinaffid=283879&clickref=chex&p=' . $encode;
+			return 'http://www.awin1.com/cread.php?awinmid=' . FindAwinMid($url) . '&awinaffid=533371&clickref=chex&p=' . $encode;
 		}elseif (in_array($Site, $anrdoezrs)) {
 			return 'http://www.anrdoezrs.net/links/8106588/type/dlg/sid/chex/' . $encode;
 		} elseif (in_array($Site, $tcfjump)) {
