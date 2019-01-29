@@ -49,7 +49,7 @@
 			case '.nl':
 				return $Land_code['nl'];
 				break;
-			case '.co.uk':	
+			case '.co.uk':
 				return $Land_code['co.uk'];
 				break;
 			case '.com':
@@ -76,7 +76,7 @@
 	function readArraySite($url, $strip_url){
 		$encode = urlencode($url);
 		$uri_encode = urlencode(FindURI($url));
- 			
+
 		$Als = readarray($url);
 
 		$Site = (FindURLplusTLD($strip_url) ? FindURLplusTLD($strip_url) : $strip_url);
@@ -161,6 +161,6 @@
 			return $redir_url;
 		}else{
 			return readArraySite($url, FindSiteName($url));
-		}	
+		}
 	}
 ?>
