@@ -147,6 +147,9 @@
 			return ' http://rover.ebay.com/rover/1/' . $Als . '/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=' . $encode;
 		}elseif(isset($TradeTrackersThingsElse[$Site])){
 			return $url . FindTradeTracker($url)[0] . '/?tt=' . FindTradeTracker($url)[1] . '_0_315369_';
+		}elseif (in_array($Site, $LinkPizza)) {
+			# https://pzz.to/click?uid=56243&target_url=https://www.zalando.nl/dames-home/&referrer=https://co2ok.ninja
+			return 'https://pzz.to/click?uid=56243&target_url=' . $encode . '&referrer=https%3A%2F%2Fco2ok.ninja';
 		}elseif (in_array($Site, $YieldKit)) {
 			return 'http://r.srvtrck.com/v1/redirect?url=' . $encode . '&api_key=6192753faa5975d8d9450690274e77dd&site_id=249c53bccf944c4c8f010cf6c914f30c&type=url&source=https%3A%2F%2Fco2ok.ninja';
 		}
